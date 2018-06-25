@@ -36,9 +36,6 @@
     <ClCompile Include="textfile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="IL\luadevil.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bitmap.h">
@@ -148,8 +145,6 @@
     <None Include="ILlib\x86\unicode\Release\DevIL.dll" />
     <None Include="ILlib\x86\unicode\Release\ILU.dll" />
     <None Include="ILlib\x86\unicode\Release\ILUT.dll" />
-    <None Include="IL\build-lua" />
-    <None Include="IL\build-python" />
     <None Include="IL\config.h.win" />
     <None Include="IL\DevIL.i" />
     <None Include="IL\stamp-h.in" />

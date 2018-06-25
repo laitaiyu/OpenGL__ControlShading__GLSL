@@ -94,7 +94,6 @@
   <ItemGroup>
     <ClCompile Include="bitmap.cpp" />
     <ClCompile Include="geometry.cpp" />
-    <ClCompile Include="IL\luadevil.c" />
     <ClCompile Include="inputModule.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PLY.cpp" />
@@ -138,8 +137,6 @@
     <None Include="ILlib\x86\unicode\Release\DevIL.dll" />
     <None Include="ILlib\x86\unicode\Release\ILU.dll" />
     <None Include="ILlib\x86\unicode\Release\ILUT.dll" />
-    <None Include="IL\build-lua" />
-    <None Include="IL\build-python" />
     <None Include="IL\config.h.win" />
     <None Include="IL\DevIL.i" />
     <None Include="IL\stamp-h.in" />

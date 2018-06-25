@@ -22,6 +22,8 @@ https://youtu.be/fl7UiBlquT8
 YouTube Keywords or Tags
 OpenGL, Shading, 3D Computer Graphics, 
 
+GitHub
+https://github.com/laitaiyu/OpenGL__ControlShading__GLSL
 
 ## Authors
 

@@ -13,9 +13,10 @@
 *.userprefs
 
 # Build results
-[Dd]ebug/
+/.vs
+/OpenGL__ControlShading__GLSL/[Dd]ebug/
+/OpenGL__ControlShading__GLSL/[Rr]elease/
 [Dd]ebugPublic/
-[Rr]elease/
 [Rr]eleases/
 x64/
 x86/
