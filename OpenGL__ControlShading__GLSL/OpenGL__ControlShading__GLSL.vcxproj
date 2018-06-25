@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{77B2A036-32F0-4C01-876A-73F086B57073}</ProjectGuid>
+    <RootNamespace>OpenGL__ControlShading__GLSL</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27625.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(ProjectDir)FreeImage.lib;$(ProjectDir)GL\glut32.lib;$(ProjectDir)GL\glew32.lib;$(ProjectDir)ILlib\x86\Release\DevIL.lib;$(ProjectDir)ILlib\x86\Release\ILU.lib;$(ProjectDir)ILlib\x86\Release\ILUT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)GL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(ProjectDir)FreeImage.lib;$(ProjectDir)GL\glut32.lib;$(ProjectDir)GL\glew32.lib;$(ProjectDir)ILlib\x86\Release\DevIL.lib;$(ProjectDir)ILlib\x86\Release\ILU.lib;$(ProjectDir)ILlib\x86\Release\ILUT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)GL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bitmap.cpp" />
+    <ClCompile Include="geometry.cpp" />
+    <ClCompile Include="IL\luadevil.c" />
+    <ClCompile Include="inputModule.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PLY.cpp" />
+    <ClCompile Include="textfile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bitmap.h" />
+    <ClInclude Include="FreeImage.h" />
+    <ClInclude Include="geometry.h" />
+    <ClInclude Include="GL\glew.h" />
+    <ClInclude Include="GL\glut.h" />
+    <ClInclude Include="GL\glxew.h" />
+    <ClInclude Include="GL\wglew.h" />
+    <ClInclude Include="IL\devil_cpp_wrapper.hpp" />
+    <ClInclude Include="IL\devil_internal_exports.h" />
+    <ClInclude Include="IL\il.h" />
+    <ClInclude Include="IL\ilu.h" />
+    <ClInclude Include="IL\ilut.h" />
+    <ClInclude Include="IL\ilut_config.h" />
+    <ClInclude Include="IL\ilu_region.h" />
+    <ClInclude Include="IL\il_wrap.h" />
+    <ClInclude Include="inputModule.h" />
+    <ClInclude Include="PLY.h" />
+    <ClInclude Include="textfile.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bunny.ply" />
+    <None Include="FreeImage.dll" />
+    <None Include="GL\glew32.dll" />
+    <None Include="GL\glut.def" />
+    <None Include="GL\glut32.dll" />
+    <None Include="ILlib\x64\Release\DevIL.dll" />
+    <None Include="ILlib\x64\Release\ILU.dll" />
+    <None Include="ILlib\x64\Release\ILUT.dll" />
+    <None Include="ILlib\x64\unicode\Release\DevIL.dll" />
+    <None Include="ILlib\x64\unicode\Release\ILU.dll" />
+    <None Include="ILlib\x64\unicode\Release\ILUT.dll" />
+    <None Include="ILlib\x86\Release\DevIL.dll" />
+    <None Include="ILlib\x86\Release\ILU.dll" />
+    <None Include="ILlib\x86\Release\ILUT.dll" />
+    <None Include="ILlib\x86\unicode\Release\DevIL.dll" />
+    <None Include="ILlib\x86\unicode\Release\ILU.dll" />
+    <None Include="ILlib\x86\unicode\Release\ILUT.dll" />
+    <None Include="IL\build-lua" />
+    <None Include="IL\build-python" />
+    <None Include="IL\config.h.win" />
+    <None Include="IL\DevIL.i" />
+    <None Include="IL\stamp-h.in" />
+    <None Include="OpenGL__ControlShading__GLSL.vcproj" />
+    <None Include="part0_opengl.frag" />
+    <None Include="part0_opengl.vert" />
+    <None Include="part1_spotlight.frag" />
+    <None Include="part1_spotlight.vert" />
+    <None Include="part2_toonf2.frag" />
+    <None Include="part2_toonf2.vert" />
+    <None Include="part3_wave.frag" />
+    <None Include="part3_wave.vert" />
+    <None Include="part4_wave.frag" />
+    <None Include="part4_wave.vert" />
+    <None Include="part5_l3d.frag" />
+    <None Include="part5_l3d.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="FreeImage.lib" />
+    <Library Include="GL\glew32.lib" />
+    <Library Include="GL\glew32s.lib" />
+    <Library Include="GL\glut32.lib" />
+    <Library Include="ILlib\x64\Release\DevIL.lib" />
+    <Library Include="ILlib\x64\Release\ILU.lib" />
+    <Library Include="ILlib\x64\Release\ILUT.lib" />
+    <Library Include="ILlib\x64\unicode\Release\DevIL.lib" />
+    <Library Include="ILlib\x64\unicode\Release\ILU.lib" />
+    <Library Include="ILlib\x64\unicode\Release\ILUT.lib" />
+    <Library Include="ILlib\x86\Release\DevIL.lib" />
+    <Library Include="ILlib\x86\Release\ILU.lib" />
+    <Library Include="ILlib\x86\Release\ILUT.lib" />
+    <Library Include="ILlib\x86\unicode\Release\DevIL.lib" />
+    <Library Include="ILlib\x86\unicode\Release\ILU.lib" />
+    <Library Include="ILlib\x86\unicode\Release\ILUT.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="l3d.bmp" />
+    <Image Include="qr.bmp" />
+    <Image Include="wood.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="GL\README-win32.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

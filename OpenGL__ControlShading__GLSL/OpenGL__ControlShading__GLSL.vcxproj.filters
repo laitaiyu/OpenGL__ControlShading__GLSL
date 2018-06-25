@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="GL">
+      <UniqueIdentifier>{2392766c-bb2b-49e0-bfdd-337593222061}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bitmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inputModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PLY.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="textfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IL\luadevil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bitmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="geometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inputModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PLY.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="textfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GL\glew.h">
+      <Filter>GL</Filter>
+    </ClInclude>
+    <ClInclude Include="GL\glut.h">
+      <Filter>GL</Filter>
+    </ClInclude>
+    <ClInclude Include="GL\glxew.h">
+      <Filter>GL</Filter>
+    </ClInclude>
+    <ClInclude Include="GL\wglew.h">
+      <Filter>GL</Filter>
+    </ClInclude>
+    <ClInclude Include="IL\devil_cpp_wrapper.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IL\devil_internal_exports.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IL\il.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IL\il_wrap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IL\ilu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IL\ilu_region.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IL\ilut.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IL\ilut_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="part0_opengl.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="part0_opengl.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="part1_spotlight.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="part1_spotlight.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="part2_toonf2.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="part2_toonf2.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="part3_wave.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="part3_wave.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="part4_wave.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="part4_wave.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="part5_l3d.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="part5_l3d.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bunny.ply" />
+    <None Include="FreeImage.dll" />
+    <None Include="OpenGL__ControlShading__GLSL.vcproj" />
+    <None Include="ILlib\x64\Release\DevIL.dll" />
+    <None Include="ILlib\x64\Release\ILU.dll" />
+    <None Include="ILlib\x64\Release\ILUT.dll" />
+    <None Include="ILlib\x64\unicode\Release\DevIL.dll" />
+    <None Include="ILlib\x64\unicode\Release\ILU.dll" />
+    <None Include="ILlib\x64\unicode\Release\ILUT.dll" />
+    <None Include="ILlib\x86\Release\DevIL.dll" />
+    <None Include="ILlib\x86\Release\ILU.dll" />
+    <None Include="ILlib\x86\Release\ILUT.dll" />
+    <None Include="ILlib\x86\unicode\Release\DevIL.dll" />
+    <None Include="ILlib\x86\unicode\Release\ILU.dll" />
+    <None Include="ILlib\x86\unicode\Release\ILUT.dll" />
+    <None Include="IL\build-lua" />
+    <None Include="IL\build-python" />
+    <None Include="IL\config.h.win" />
+    <None Include="IL\DevIL.i" />
+    <None Include="IL\stamp-h.in" />
+    <None Include="GL\glew32.dll" />
+    <None Include="GL\glut.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="GL\glut32.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="FreeImage.lib" />
+    <Library Include="ILlib\x64\Release\DevIL.lib" />
+    <Library Include="ILlib\x64\Release\ILU.lib" />
+    <Library Include="ILlib\x64\Release\ILUT.lib" />
+    <Library Include="ILlib\x64\unicode\Release\DevIL.lib" />
+    <Library Include="ILlib\x64\unicode\Release\ILU.lib" />
+    <Library Include="ILlib\x64\unicode\Release\ILUT.lib" />
+    <Library Include="ILlib\x86\Release\DevIL.lib" />
+    <Library Include="ILlib\x86\Release\ILU.lib" />
+    <Library Include="ILlib\x86\Release\ILUT.lib" />
+    <Library Include="ILlib\x86\unicode\Release\DevIL.lib" />
+    <Library Include="ILlib\x86\unicode\Release\ILU.lib" />
+    <Library Include="ILlib\x86\unicode\Release\ILUT.lib" />
+    <Library Include="GL\glew32.lib" />
+    <Library Include="GL\glew32s.lib" />
+    <Library Include="GL\glut32.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="l3d.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="qr.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="wood.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="GL\README-win32.txt" />
+  </ItemGroup>
+</Project>
